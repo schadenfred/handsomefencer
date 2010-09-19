@@ -11,16 +11,18 @@ gem 'devise',                   '>=1.1.2'
 
 
 group :development do
-  gem 'rspec-rails',  '>=2.0.0.beta.22'
+
 end
 
 group :test, :development, :cucumber do
-  gem 'rspec',                  '>=2.0.0.beta.22'
+  gem 'rspec',                  '2.0.0.beta.18'
+  gem 'rspec-rails',            '2.0.0.beta.18'
   gem 'autotest',               '>=4.3.2'
   gem 'autotest-rails',         '>=4.1.0'
   gem 'autotest-notification',  '>=2.3.1'
   gem 'cucumber',               '>=0.8.5'
   gem 'cucumber-rails',         '>=0.3.2'
+  gem 'spork',                  '>=0.8.4'
 end
 
 # To use debugger
