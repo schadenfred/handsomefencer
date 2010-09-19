@@ -1,17 +1,27 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.0'
+gem 'sqlite3-ruby',             :require => 'sqlite3'
+gem 'haml',                     '>=3.0.18'
+gem 'haml-rails',               '>=0.2'
+gem 'compass',                  '>=0.10.5'
+gem 'heroku',                   '>=1.10.4'
+gem 'friendly_id',              '>=3.1.6'
+gem 'devise',                   '>=1.1.2'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+group :development do
+  gem 'rspec-rails',  '>=2.0.0.beta.22'
+end
 
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
+group :test, :development, :cucumber do
+  gem 'rspec',                  '>=2.0.0.beta.22'
+  gem 'autotest',               '>=4.3.2'
+  gem 'autotest-rails',         '>=4.1.0'
+  gem 'autotest-notification',  '>=2.3.1'
+  gem 'cucumber',               '>=0.8.5'
+  gem 'cucumber-rails',         '>=0.3.2'
+end
 
 # To use debugger
 # gem 'ruby-debug'
@@ -28,3 +38,4 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
