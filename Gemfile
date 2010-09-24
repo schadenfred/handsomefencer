@@ -5,13 +5,12 @@ gem 'sqlite3-ruby',             :require => 'sqlite3'
 gem 'haml',                     '>=3.0.18'
 gem 'haml-rails',               '>=0.2'
 gem 'compass',                  '>=0.10.5'
-gem 'heroku',                   '>=1.10.4'
 gem 'friendly_id',              '>=3.1.6'
 gem 'devise',                   '>=1.1.2'
 
 
 group :development do
-
+  gem 'heroku',                   '>=1.10.4'
 end
 
 group :test, :development, :cucumber do

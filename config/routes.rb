@@ -1,4 +1,10 @@
 Handsomefencer::Application.routes.draw do
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+  match '/terms',   :to => 'pages#terms'
+  match '/privacy', :to => 'pages#privacy'
+
   root :to => "pages#home"
 
   get "pages/home"
